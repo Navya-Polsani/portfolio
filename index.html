@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navya Polsani | Portfolio</title>
+  <style>
+    :root {
+      --primary: #6a1b9a;
+      --secondary: #ff6f61;
+      --accent: #00bfa5;
+      --bg: #fdfcff;
+      --text: #1e1e1e;
+    }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+    header { background: linear-gradient(120deg, var(--primary), var(--secondary)); color: white; text-align: center; padding: 60px 20px 40px; }
+    header img { width: 130px; height: 130px; border-radius: 50%; border: 5px solid white; object-fit: cover; margin-bottom: 15px; }
+    header h1 { font-size: 2.5rem; }
+    header p { font-size: 1.2rem; margin-top: 5px; }
+    main { max-width: 1100px; margin: 30px auto; padding: 20px; }
+    section { background: white; padding: 25px 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    h2 { border-left: 6px solid var(--primary); padding-left: 10px; color: var(--primary); margin-bottom: 20px; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+    .skill-block { background: linear-gradient(135deg, #f8f9fa, #e0e0e0); color: #333; padding: 8px 12px; border-radius: 8px; text-align: center; font-weight: bold; transition: transform 0.3s ease; border: 1px solid #ccc; }
+    .skill-block:hover { transform: scale(1.05); background: var(--accent); color: white; }
+    .timeline { position: relative; padding-left: 25px; }
+    .timeline::before { content: ''; position: absolute; left: 10px; top: 0; width: 4px; height: 100%; background: #ccc; }
+    .timeline-block { position: relative; margin-bottom: 30px; }
+    .timeline-block::before { content: ''; position: absolute; width: 14px; height: 14px; background: var(--accent); border: 3px solid white; border-radius: 50%; left: 3px; top: 6px; box-shadow: 0 0 0 2px var(--accent); }
+    .timeline-content { margin-left: 25px; background: #f7f7f7; padding: 10px 15px; border-radius: 8px; border-left: 4px solid var(--primary); }
+    .timeline-content h4 { margin-bottom: 4px; color: var(--primary); }
+    .timeline-content small { font-size: 0.9rem; color: #555; }
+    .contact p { margin: 6px 0; }
+    a { color: var(--secondary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style: none; padding-left: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Navya Polsani Profile Picture" />
+    <h1>Navya Polsani</h1>
+    <p>Senior Full Stack Java Developer</p>
+  </header>
+  <main>
+    <section><h2>About Me</h2><p>Experienced Full Stack Java Developer with expertise in web applications, cloud platforms, messaging systems, and modern frameworks.</p></section>
+    <section><h2>Skills</h2><div class="skills-grid">
+      <div class="skill-block">Java 8</div><div class="skill-block">Java 11</div><div class="skill-block">Java 17</div>
+      <div class="skill-block">J2EE</div><div class="skill-block">C</div><div class="skill-block">C++</div>
+      <div class="skill-block">C#</div><div class="skill-block">Python</div><div class="skill-block">HTML5</div>
+      <div class="skill-block">CSS3</div><div class="skill-block">JavaScript</div><div class="skill-block">TypeScript</div>
+      <div class="skill-block">React JS</div><div class="skill-block">Angular</div><div class="skill-block">NodeJS</div>
+      <div class="skill-block">SOAP</div><div class="skill-block">REST</div><div class="skill-block">Spring</div>
+      <div class="skill-block">Spring Boot</div><div class="skill-block">Spring Security</div><div class="skill-block">Hibernate</div>
+      <div class="skill-block">Microservices</div><div class="skill-block">Docker</div><div class="skill-block">Kubernetes</div>
+      <div class="skill-block">Jenkins</div><div class="skill-block">Maven</div><div class="skill-block">Gradle</div>
+      <div class="skill-block">Linux</div><div class="skill-block">MySQL</div><div class="skill-block">PostgreSQL</div>
+      <div class="skill-block">MongoDB</div><div class="skill-block">Oracle</div><div class="skill-block">Cassandra</div>
+      <div class="skill-block">Kafka</div><div class="skill-block">RabbitMQ</div><div class="skill-block">AWS</div>
+      <div class="skill-block">Azure</div><div class="skill-block">GCP</div>
+    </div></section>
+    <section><h2>Experience</h2><div class="timeline">
+      <div class="timeline-block"><div class="timeline-content"><h4>Senior Full Stack Developer</h4><small>Adobe – San Jose, CA<br>Jul 2023 – Present</small></div></div>
+      <div class="timeline-block"><div class="timeline-content"><h4>Full Stack Developer</h4><small>Edelman Financial Engines – Dallas, TX<br>Feb 2022 – Jun 2023</small></div></div>
+      <div class="timeline-block"><div class="timeline-content"><h4>Full Stack Developer</h4><small>Discount Tire – Scottsdale, AZ<br>Dec 2019 – Jan 2022</small></div></div>
+      <div class="timeline-block"><div class="timeline-content"><h4>Software Engineer</h4><small>Staples – Framingham, MA<br>Jun 2018 – Nov 2019</small></div></div>
+      <div class="timeline-block"><div class="timeline-content"><h4>Software Engineer Intern</h4><small>Edukart – India<br>Apr 2017 – May 2018</small></div></div>
+    </div></section>
+    <section><h2>Education</h2><ul>
+      <li><strong>Masters in Information Systems and Technology</strong> – University of North Texas (2024–2025)</li>
+      <li><strong>Bachelors in Civil Engineering</strong> – GNIT, Hyderabad, India (2015–2018)</li>
+    </ul></section>
+    <section class="contact"><h2>Contact</h2>
+      <p>Email: <a href="mailto:navya711p@gmail.com">navya711p@gmail.com</a></p>
+      <p>Phone: <a href="tel:+14052375375">+1 405-237-5375</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/navya-polsani-b2118b374" target="_blank">linkedin.com/in/navya-polsani-b2118b374</a></p>
+    </section>
+  </main>
+</body>
+</html>
